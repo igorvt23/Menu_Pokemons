@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem Pokémon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/CSS/reset.css">
+    <link rel="stylesheet" href="./src/CSS/style.css">
+    <link rel="stylesheet" href="./src/CSS/scrollbar.css">
+    <link rel="icon" href="./src/imagens/pokeball.png">
+</head>
+
+<body>
+    <header>
+        <a href="#">
+            <img class="logo" src="./src/imagens/pokeball.png" alt="pokeball">
+        </a>
+        <button id="botao-alterar-tema">
+            <img class="imagem-botao" src="./src/imagens/sun.png" alt="imagem do sol" onclick="toggleMode()">
+        </button>
+    </header>
+    <main>
+        <ul class="listagem-pokemon">
+            <!-- BULBASAUR -->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Bulbasaur</span>
+                    <span>#001</span>
+                </div>
+                <a href="https://pokemondb.net/pokedex/bulbasaur">
+                    <img class="gif" src="./src/imagens/bulbasaur.gif" alt="Bulbasaur">
+                </a>
+                <ul class="tipos">
+                    <li class="tipo grama">Grama</li>
+                    <li class="tipo veneno">Veneno</li>
+                </ul>
+                <p class="descricao">Há uma semente de planta em suas costas desde o dia que este Pokémon nasce. A semente cresce lentamente.</p>
+            </li>
+            <!-- IVYSAUR -->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Ivysaur</span>
+                    <span>#002</span>
+                </div>
+                <a href="https://pokemondb.net/pokedex/ivysaur">
+                    <img class="gif" src="./src/imagens/ivysaur.gif" alt="Ivysaur">
+                </a>
+                <ul class="tipos">
+                    <li class="tipo grama">Grama</li>
+                    <li class="tipo veneno">Veneno</li>
+                </ul>
+                <p class="descricao">Quando o bulbo em suas costas cresce, parece perder a capacidade de ficar em pé em suas patas traseiras.</p>
+            </li>
+            <!-- VENSAUR -->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Vensaur</span>
+                    <span>#003</span>
+                </div>
+                <a href="https://pokemondb.net/pokedex/venusaur">
+                    <img class="gif" src="./src/imagens/venusaur.gif" alt="Venusaur">
+                </a>
+                <ul class="tipos">
+                    <li class="tipo grama">Grama</li>
+                    <li class="tipo veneno">Veneno</li>
+                </ul>
+                <p class="descricao">Sua planta floresce quando está absorvendo energia solar. ele permanece em movimento para buscar a luz solar.</p>
+            </li>
+            <!-- CHARMANDER -->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Charmander</span>
+                    <span>#004</span>
+                </div>
+                <a href="https://pokemondb.net/pokedex/charmander">
+                    <img class="gif" src="./src/imagens/charmander.gif" alt="Charmander">
+                </a>
+                <ul class="tipos">
+                    <li class="tipo fogo">Fogo</li>
+                </ul>
+                <p class="descricao">Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da ponta de sua cauda</p>
+            </li>
+            <!-- CHARMELEON -->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Charmeleon</span>
+                    <span>#005</span>
+                </div>
+                <a href="https://pokemondb.net/pokedex/charmeleon">
+                    <img class="gif" src="./src/imagens/charmeleon.gif" alt="Charmeleon">
+                </a>
+                <ul class="tipos">
+                    <li class="tipo fogo">Fogo</li>
+                </ul>
+                <p class="descricao">Tem uma natureza bárbara. Na batalha, ele chicoteia sua cauda ardente e corta com garras afiadas</p>
+            </li>
+            <!-- CHARIZARD -->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Charizard</span>
+                    <span>#006</span>
+                </div>
+                <a href="https://pokemondb.net/pokedex/charizard">
+                    <img class="gif" src="./src/imagens/charizard.gif" alt="Charizard">
+                </a>
+                <ul class="tipos">
+                    <li class="tipo fogo">Fogo</li>
+                </ul>
+                <p class="descricao">Ele cospe fogo que é quente o suficiente para derreter pedregulhos. Pode causar incêndios florestais soprando chamas</p>
+            </li>
+            <!-- SQUIRTLE -->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Squirtle</span>
+                    <span>#007</span>
+                </div>
+                <a href="https://pokemondb.net/pokedex/squirtle">
+                    <img class="gif" src="./src/imagens/squirtle.gif" alt="Squirtle">
+                </a>
+                <ul class="tipos">
+                    <li class="tipo agua">Água</li>
+                </ul>
+                <p class="descricao">Quando ele retrai seu longo pescoço em sua concha, ele esguicha água com força vigorosa</p>
+            </li>
+            <!-- WARTORTLE -->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Wartortle</span>
+                    <span>#008</span>
+                </div>
+                <a href="https://pokemondb.net/pokedex/wartortle">
+                    <img class="gif" src="./src/imagens/Wartortle.gif" alt="Wartortle">
+                </a>
+                <ul class="tipos">
+                    <li class="tipo agua">Água</li>
+                </ul>
+                <p class="descricao">É reconhecido como um símbolo de longevidade. Se sua concha tem algas, esse Wartortle é muito antigo</p>
+            </li>
+            <!-- BLASTOISE -->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Blastoise</span>
+                    <span>#009</span>
+                </div>
+                <a href="https://pokemondb.net/pokedex/blastoise">
+                    <img class="gif" src="./src/imagens/blastoise.gif" alt="Blastoise">
+                </a>
+                <ul class="tipos">
+                    <li class="tipo agua">Água</li>
+                </ul>
+                <p class="descricao">Ele esmaga seu inimigo sob seu corpo pesado para causar desmaios. Em uma pitada, ele se retirará dentro de sua concha</p>
+            </li>
+            <!-- CATERPIE -->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Caterpie</span>
+                    <span>#010</span>
+                </div>
+                <a href="https://pokemondb.net/pokedex/caterpie">
+                    <img class="gif" src="./src/imagens/caterpie.gif" alt="Caterpie">
+                </a>
+                <ul class="tipos">
+                    <li class="tipo inseto">Inseto</li>
+                </ul>
+                <p class="descricao">Para proteção, ele libera um fedor horrível da antena em sua cabeça para fastar o inimigo</p>
+            </li>
+        </ul> <!--listagem-pokemon-->
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
